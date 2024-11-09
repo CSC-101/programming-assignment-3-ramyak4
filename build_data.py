@@ -9,7 +9,7 @@ from data import CountyDemographics
 #
 # Note that this function assumes the dictionary is properly structured.
 def convert_county(county) -> CountyDemographics:
-    if 'Median Houseold Income' in county['Income']:
+    if 'Median Household Income' in county['Income']:
         county['Income']['Median Household Income'] =\
                 county['Income']['Median Houseold Income']
         del county['Income']['Median Houseold Income']
